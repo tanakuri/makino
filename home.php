@@ -241,11 +241,11 @@
 				</div>
 				<div id="center">
 					<h3 class="sub-title">Featured Book</h3>
-					<a target="_blank" href="<?php echo $featured_book_amazon_url; ?>">
-						<div id="featured-book">
+					<div id="featured-book">
+						<a target="_blank" href="<?php echo $featured_book_amazon_url; ?>">
 							<img src="<?php echo $featured_book_image_url; ?>"/>
-						</div>
-					</a>
+						</a>
+					</div>
 					<p id="featured-book-desc" class="mako">
 						<?php echo nl2br($featured_book_text); ?>
 						<br/>詳細は<a href="featured.php">こちら</a>。
