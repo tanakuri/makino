@@ -1,6 +1,6 @@
 	<div id="topgreen"></div>
 		<div id="top">
-			<h1 id="name-en">Makino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yo</h1>
+			<h1 id="name-en"><span style="margin-right: 65px;margin-left: 10px;">Makino</span><span>Yo</span></h1>
 			<h1 id="name-jp"></h1>
 			<h2 id="tagline">Integrating Work and Life</h2>
 		</div>

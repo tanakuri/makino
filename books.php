@@ -19,6 +19,7 @@ include('includes/header.php');
 				float:left;
 				z-index:10;
 				position:relative;
+				opacity:0.3;
 			}
 			#books li.viewfinder{
 				position: absolute;
@@ -32,10 +33,36 @@ include('includes/header.php');
 			}
 			#books li img{
 				width:100%;
-				opacity:0.3;
 			}
-			#books li.selected img{
+			#books li.selected{
 				opacity:1;
+			}
+			#books li .banner-small{
+				width: 10px;
+				height: 25px;
+				position: absolute;
+				right: 15px;
+				top:10px;
+			}
+			#books li .banner-small-tan{
+				background-image:url('images/banner-tan-small.png');
+				background-size:10px 25px;
+			}
+			#books li .banner-small-kyo{
+				background-image:url('images/banner-kyo-small.png');
+				background-size:10px 25px;
+			}
+			#books li .banner-small-kaisetu{
+				background-image:url('images/banner-kaisetsu-small.png');
+				background-size:10px 25px;
+			}
+			#books li .banner-small-kanren{
+				background-image:url('images/banner-kanren-small.png');
+				background-size:10px 25px;
+			}
+			#books li .banner-small-yaku{
+				background-image:url('images/banner-yaku-small.png');
+				background-size:10px 25px;
 			}
 			.showcase{
 				display:none;
@@ -44,6 +71,7 @@ include('includes/header.php');
 				display:inline-block;
 				margin:0px 0px 30px 0px;
 				width: 400px;
+				position:relative;
 			}
 			.showcase .sc-left img{
 				width:332px;
@@ -52,6 +80,33 @@ include('includes/header.php');
 				border:1px solid #333;
 				display:block;
 				margin:0px auto;
+			}
+			.showcase .sc-left .banner{
+				width: 60px;
+				height: 150px;
+				position: absolute;
+				top: -8px;
+				right: 40px;				
+			}
+			.showcase .sc-left .banner-tan{
+				background-image:url('images/banner-tan.png');
+				background-size:60px 150px;
+			}
+			.showcase .sc-left .banner-kyo{
+				background-image:url('images/banner-kyo.png');
+				background-size:60px 150px;
+			}
+			.showcase .sc-left .banner-kaisetu{
+				background-image:url('images/banner-kaisetsu.png');
+				background-size:60px 150px;
+			}
+			.showcase .sc-left .banner-kanren{
+				background-image:url('images/banner-kanren.png');
+				background-size:60px 150px;
+			}
+			.showcase .sc-left .banner-yaku{
+				background-image:url('images/banner-yaku.png');
+				background-size:60px 150px;
 			}
 			.showcase .sc-right{
 				vertical-align:top;
@@ -64,11 +119,47 @@ include('includes/header.php');
 				padding:20px;
 				border: 1px solid grey;
 				background-color:whiteSmoke;
+				position:relative;
 			}
 			.showcase .description h3{
-				font-weight:bold;
-				margin:10px 0px;
-				font-size:1.2em;
+				font-weight: bold;
+				font-size: 1.5em;
+				width: 450px;
+				position: absolute;
+				background-image: url('images/old-paper-texture.jpg');
+				background-size: 450px 80px;
+				left: -11px;
+				padding: 5px 0px;
+				height: 70px;
+				line-height: 70px;
+				z-index: 10;
+			}
+			.showcase .description h3.double{
+				line-height: 35px;
+			}
+			.showcase .description h3:before{	
+				border-color: transparent #7f3d00 #7f3d00 transparent;
+				border-style:solid;
+				border-width:4px;
+				width:0;
+				height:0;
+				position:absolute;
+				content:"";
+				left:2px;
+				top:-8px;
+				z-index:-10;
+			}
+			.showcase .description h3:after{	
+				border-color: transparent transparent #7f3d00 #7f3d00;
+				border-style:solid;
+				border-width:4px;
+				width:0;
+				height:0;
+				position:absolute;
+				content:"";
+				right:2px;
+				top:-8px;
+				z-index:-10;
 			}
 			.showcase .description h3 span{
 				font-weight:normal;
@@ -76,6 +167,7 @@ include('includes/header.php');
 			}
 			.showcase .description p{
 				text-align:left;
+				margin-top:100px;
 			}
 			.showcase .amazon-button{
 				display:inline-block;
@@ -127,6 +219,7 @@ include('includes/header.php');
 				<li id="<?php echo $value[2]; ?>" class="book <?php if( $i == 0 ) echo 'selected'; ?>">
 					<a name="<?php echo $i; ?>"></a>
 					<img src="<?php echo $value[1]; ?>"/>
+					<div class="banner-small <?php if( $value[0] ) echo 'banner-small-'.$value[0];?>"></div>
 				</li>
 <?php
 	}
@@ -140,10 +233,13 @@ include('includes/header.php');
 			<div class="showcase">
 				<div class="sc-left">
 					<img src="<?php echo $value[1]; ?>"/>
+					<div class="banner <?php if( $value[0] ) echo 'banner-'.$value[0];?>"></div>
 				</div>
 				<div class="sc-right">
 					<div class="description mako">
-						<h3><?php echo $value[2]; if( $value[3] ) echo '<br/><span>'.$value[3].'</span>'; ?></h3>
+						<h3 <?php if( $value[3] ) echo 'class="double"'; ?>> 
+						<?php echo $value[2]; if( $value[3] ) echo '<br/><span>'.$value[3].'</span>'; ?>
+						</h3>
 						<p><?php echo $value[4]; ?></p>
 						<a target="_blank" href="<?php echo $value[5]; ?>"><div class="amazon-button"></div></a>
 					</div>
