@@ -19,7 +19,7 @@
 				<li class="<?php if( $tab == "books" ) echo 'selected'; ?>">
 					<h2>Books</h2><br/>
 					<div>
-						<a href="books.php"><h2>List</h2></a><br/>
+						<a href="books.php"><h2>Showcase</h2></a><br/>
 						<a href="featured.php"><h2>Featured book</h2></a>
 					</div>
 				</li>
