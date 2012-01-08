@@ -20,7 +20,7 @@
 		$emailmessage = "name: ".$name."\n\n email: ".$email."\n\n comment: ".$comment;
 
 		//send it!
-		mail('tanaka.cliff@gmail.com',"Someone sent you a comment on yomakino.com",mb_convert_encoding( $emailmessage, "utf-8", "HTML-ENTITIES" ));
+		mail('makinoblog@gmail.com',"Someone sent you a comment on yomakino.com",mb_convert_encoding( $emailmessage, "utf-8", "HTML-ENTITIES" ));
 
 		echo "good";
 	} else {
