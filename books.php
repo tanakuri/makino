@@ -38,31 +38,27 @@ include('includes/header.php');
 				opacity:1;
 			}
 			#books li .banner-small{
-				width: 10px;
-				height: 25px;
+				width: 13%;
+				height: 25%;
 				position: absolute;
 				right: 15px;
 				top:10px;
+				background-size:100% 100%;
 			}
 			#books li .banner-small-tan{
 				background-image:url('images/banner-tan-small.png');
-				background-size:10px 25px;
 			}
 			#books li .banner-small-kyo{
 				background-image:url('images/banner-kyo-small.png');
-				background-size:10px 25px;
 			}
 			#books li .banner-small-kaisetu{
 				background-image:url('images/banner-kaisetsu-small.png');
-				background-size:10px 25px;
 			}
 			#books li .banner-small-kanren{
 				background-image:url('images/banner-kanren-small.png');
-				background-size:10px 25px;
 			}
 			#books li .banner-small-yaku{
 				background-image:url('images/banner-yaku-small.png');
-				background-size:10px 25px;
 			}
 			.showcase{
 				display:none;
