@@ -44,8 +44,8 @@
 			
 			/* CENTER */
 			#featured-book{
-				width:240px;
-				height:320px;
+				width:200px;
+				height:300px;
 				border:3px solid white;
 				margin:auto;
 				background-color:grey;

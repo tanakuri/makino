@@ -177,11 +177,16 @@ include('includes/header.php');
 		<script>
 		function getHash() {
   			var hash = window.location.hash;
-  			return hash.substring(1,2); // remove #
+  			if( hash.indexOf('-') > -1 ){
+  				hash = hash.substring(1, hash.indexOf('-'));
+  			} else {
+  				hash = hash.substring(1);
+  			}
+  			return hash; // remove #
 		}
 		$(function(){
 			var count = $('#books li.book').length;
-			var width = 880/count - 30;
+			var width = Math.floor(880/count) - 30;
 			var height = width*1.5;
 			$('#books .viewfinder').css({
 				width:width+20,
@@ -206,7 +211,18 @@ include('includes/header.php');
 					$('.showcase').eq(index).show();
 				});
 			});
-			$('#books li').eq( getHash() ).click();
+			
+			//onload
+			var index = getHash();
+			var element = $('#books li').eq(index);
+			$('#books li').removeClass('selected');
+			var left = element.position().left - 10;
+			$('.viewfinder').css({left:left});
+			element.addClass('selected');
+			var src = $('img', element).attr('src');
+			$('#showcase img').attr('src', src);
+			$('.showcase').hide();
+			$('.showcase').eq(index).show();
 		});
 		</script>
 	</head>
