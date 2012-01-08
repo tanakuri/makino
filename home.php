@@ -248,7 +248,7 @@
 					</div>
 					<p id="featured-book-desc" class="mako">
 						<?php echo nl2br($featured_book_text); ?>
-						<br/>詳細は<a href="featured.php">こちら</a>。
+						<br/>目次は<a href="featured.php">こちら</a>。
 					</p>
 				</div>
 				<div id="right">

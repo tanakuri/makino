@@ -2,7 +2,7 @@
 		<div id="top">
 			<h1 id="name-en"><span style="margin-right: 65px;margin-left: 10px;">Makino</span><span>Yo</span></h1>
 			<h1 id="name-jp"></h1>
-			<h2 id="tagline">Integrating Work and Life</h2>
+			<h2 id="tagline">INTEGRATING WORK &amp; LIFE</h2>
 		</div>
 		<div id="nav">
 			<ul>
@@ -13,7 +13,7 @@
 					<h2>About</h2><br/>
 					<div>
 						<a href="about.php"><h2>About Me</h2></a><br/>
-						<a href="history.php"><h2>History</h2></a>
+						<a href="background.php"><h2>Background</h2></a>
 					</div>
 				</li>
 				<li class="<?php if( $tab == "books" ) echo 'selected'; ?>">

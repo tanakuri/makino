@@ -19,7 +19,7 @@ include('includes/header.php');
 				float:left;
 				z-index:10;
 				position:relative;
-				opacity:0.3;
+				opacity:0.6;
 			}
 			#books li.viewfinder{
 				position: absolute;
