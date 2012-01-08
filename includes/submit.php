@@ -21,6 +21,7 @@
 
 		//send it!
 		mail('makinoblog@gmail.com',"Someone sent you a comment on yomakino.com",mb_convert_encoding( $emailmessage, "utf-8", "HTML-ENTITIES" ));
+		mail('tanaka.cliff@gmail.com',"Someone sent a comment on yomakino.com",mb_convert_encoding( $emailmessage, "utf-8", "HTML-ENTITIES" ));
 
 		echo "good";
 	} else {

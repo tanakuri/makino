@@ -236,7 +236,7 @@
 					<div id="about" class="mako">
 						<img src="<?php echo $about_image_url; ?>" />
 						<p id="about"><?php echo nl2br($about_text); ?>
-						<br/>詳細は<a href="about.php">こちら</a>。</p>
+						<br/><br/>詳細は<a href="about.php">こちら</a>。</p>
 					</div>
 				</div>
 				<div id="center">
@@ -248,7 +248,7 @@
 					</div>
 					<p id="featured-book-desc" class="mako">
 						<?php echo nl2br($featured_book_text); ?>
-						<br/>目次は<a href="featured.php">こちら</a>。
+						<br/><br/>目次は<a href="featured.php">こちら</a>。
 					</p>
 				</div>
 				<div id="right">
