@@ -37,29 +37,6 @@ include('includes/header.php');
 			#books li.selected{
 				opacity:1;
 			}
-			#books li .banner-small{
-				width: 13%;
-				height: 25%;
-				position: absolute;
-				right: 15px;
-				top:10px;
-				background-size:100% 100%;
-			}
-			#books li .banner-small-tan{
-				background-image:url('images/banner-tan-small.png');
-			}
-			#books li .banner-small-kyo{
-				background-image:url('images/banner-kyo-small.png');
-			}
-			#books li .banner-small-kaisetu{
-				background-image:url('images/banner-kaisetsu-small.png');
-			}
-			#books li .banner-small-kanren{
-				background-image:url('images/banner-kanren-small.png');
-			}
-			#books li .banner-small-yaku{
-				background-image:url('images/banner-yaku-small.png');
-			}
 			.showcase{
 				display:none;
 			}
@@ -76,33 +53,6 @@ include('includes/header.php');
 				border:1px solid #333;
 				display:block;
 				margin:0px auto;
-			}
-			.showcase .sc-left .banner{
-				width: 60px;
-				height: 150px;
-				position: absolute;
-				top: -8px;
-				right: 40px;				
-			}
-			.showcase .sc-left .banner-tan{
-				background-image:url('images/banner-tan.png');
-				background-size:60px 150px;
-			}
-			.showcase .sc-left .banner-kyo{
-				background-image:url('images/banner-kyo.png');
-				background-size:60px 150px;
-			}
-			.showcase .sc-left .banner-kaisetu{
-				background-image:url('images/banner-kaisetsu.png');
-				background-size:60px 150px;
-			}
-			.showcase .sc-left .banner-kanren{
-				background-image:url('images/banner-kanren.png');
-				background-size:60px 150px;
-			}
-			.showcase .sc-left .banner-yaku{
-				background-image:url('images/banner-yaku.png');
-				background-size:60px 150px;
 			}
 			.showcase .sc-right{
 				vertical-align:top;
@@ -231,7 +181,6 @@ include('includes/header.php');
 				<li id="<?php echo $value[2]; ?>" class="book <?php if( $i == 0 ) echo 'selected'; ?>">
 					<a name="<?php echo $i; ?>"></a>
 					<img src="<?php echo $value[1]; ?>"/>
-					<div class="banner-small <?php if( $value[0] ) echo 'banner-small-'.$value[0];?>"></div>
 				</li>
 <?php
 	}
@@ -245,7 +194,6 @@ include('includes/header.php');
 			<div class="showcase">
 				<div class="sc-left">
 					<img src="<?php echo $value[1]; ?>"/>
-					<div class="banner <?php if( $value[0] ) echo 'banner-'.$value[0];?>"></div>
 				</div>
 				<div class="sc-right">
 					<div class="description mako">
