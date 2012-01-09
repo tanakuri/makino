@@ -23,7 +23,7 @@
 					<div id="about" class="mako">
 						<img src="<?php echo $about_image_url; ?>" />
 						<p id="about"><?php echo nl2br($about_text); ?>
-						<br/><br/>詳細は<a href="about.php">こちら</a>。</p>
+						<br/><br/>詳細は<a href="about">こちら</a>。</p>
 					</div>
 				</div>
 				<div id="center">
@@ -35,7 +35,7 @@
 					</div>
 					<p id="featured-book-desc" class="mako">
 						<?php echo nl2br($featured_book_text); ?>
-						<br/><br/>目次は<a href="featured.php">こちら</a>。
+						<br/><br/>目次は<a href="featured">こちら</a>。
 					</p>
 				</div>
 				<div id="right">
@@ -95,7 +95,7 @@
 								<div class="book-desc">
 									<div class="book-desc-box">
 										<p class="book-desc-title"><?php echo $value[2].' '.$value[3]; ?></p>
-										<p class="book-desc-body"><?php echo substr($value[4],0, 120) ?>...&nbsp;詳細は<a href="books.php#<?php echo $i; ?>">こちら</a></p>
+										<p class="book-desc-body"><?php echo substr($value[4],0, 120) ?>...&nbsp;詳細は<a href="books#<?php echo $i; ?>">こちら</a></p>
 									</div>
 								</div>
 							</li>
