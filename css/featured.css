@@ -1,0 +1,22 @@
+h3{
+	padding:30px;
+	font-size:1.6em;
+	text-align:center;
+}
+.image{
+	display:inline-block;
+	width:280px;
+	margin:10px;
+}
+.image img{
+	width:100%;
+}
+.image div{
+	margin:20px auto;
+}
+.contents{
+	display:inline-block;
+	width: 530px;
+	vertical-align: top;
+	margin: 10px 30px;
+}
