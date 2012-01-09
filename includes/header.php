@@ -15,17 +15,22 @@
 		<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Mako' rel='stylesheet' type='text/css'>
 		<link href='css/style.css' rel='stylesheet' type='text/css'>
-		<script>
-		(function($) {
-			var cache = [];
-			// Arguments are image paths relative to the current page.
-			$.preLoadImages = function() {
-				var args_len = arguments.length;
-				for (var i = args_len; i--;) {
-					var cacheImage = document.createElement('img');
-					cacheImage.src = arguments[i];
-					cache.push(cacheImage);
+		<script type="text/javascript">
+			(function($) {
+				var cache = [];
+				// Arguments are image paths relative to the current page.
+				$.preLoadImages = function() {
+					var args_len = arguments.length;
+					for (var i = args_len; i--;) {
+						var cacheImage = document.createElement('img');
+						cacheImage.src = arguments[i];
+						cache.push(cacheImage);
+					}
 				}
-			}
-		})(jQuery);
+			})(jQuery);
+			(function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/plusone.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			})();
 		</script>
