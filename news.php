@@ -3,40 +3,7 @@
 	$tab = 'news';
 	include('includes/header.php');
 ?>
-		<style>
-			#news{
-				padding:30px;
-			}
-			#news span{
-				display:inline-block;
-			}
-			.date{
-				width:150px;
-				font-size:1.1em;
-			}
-			#pic{
-				position:relative;
-			}
-			#pic #santa-monica{
-				width:700px;
-				display:block;
-				margin:30px auto 15px;
-				padding:20px 0px;
-				background-color:black;
-			}
-			#pic .caption{
-				position:absolute;
-				top:15px;
-				right:80px;
-				color:white;
-				text-shadow:0px -1px 1px #333;
-				padding:10px 20px;
-				font-size:1.1em;
-			}
-		</style>
-		<script>
-		
-		</script>
+		<link href='css/news.css' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<?php include('includes/top.php'); ?>

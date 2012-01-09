@@ -1,0 +1,64 @@
+#comment{
+	padding:30px 0px 50px;
+	position:relative;
+}
+#comment p{
+	text-align:center;
+}
+#comment p.toiawase{
+	font-size:1.5em;
+	margin:10px 0px 0px;
+}
+#comment p.requiredfield{
+	font-size:1em;
+	margin:0px 0px 20px;
+}
+#comment #input{
+	width:320px;
+	margin:0px auto;
+	line-height:25px;
+	font-size:1.1em;
+	position:relative;
+}
+#comment #input input:not([name="submit"]),
+#comment #input textarea{
+	width:300px;
+	border:1px solid grey;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size:0.9em;
+	padding:3px;
+}
+#comment #input textarea{
+	height:100px;
+}
+#comment #input #button{
+	text-align:right;
+} 
+#comment #input #button button{
+	border:1px solid grey;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color:#191941;
+	color:white;
+	cursor:pointer;
+	font-size:1.2em;
+	margin:20px 0px;
+}
+#comment #input #button button:hover{
+	opacity:0.9;
+}
+#comment #input #button button:active{
+	opacity:1;
+}
+.red{
+	color:red;
+}
+#ajax{
+	position: absolute;
+	top: 190px;
+	left: 415px;
+	display:none;
+}
