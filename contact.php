@@ -124,6 +124,14 @@
 					</div>
 					<img id="ajax" src="images/ajax-loader.gif"/>
 				</div>
+				<div id="direct">
+					<p id="direct-email">
+						<span class="label">Email: </span><span class="text">contact@yomakino.com</span>
+					</p>
+					<p id="direct-twitter">
+						<span class="label">Twitter: </span><span class="text">@yomakino</span>
+					</p>
+				</div>
 			</div>
 		<?php include('includes/bottom.html'); ?>
 	</body>

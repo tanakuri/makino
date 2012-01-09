@@ -3,8 +3,12 @@
 ?>
 <!doctype html>
 <html>
-	<meta charset="utf-8"/>
 	<head>
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="Yo, Makino, Freelance journalist, Japanese, journalist, 日本語, ジャーナリズム, 経済, 牧野, 洋, 牧野洋">
+		<meta name="description" content="">
+		<meta name="author" content="Yo Makino">
+		<meta name="copyright" content="January 2012">
 		<title>Yo Makino - <?php echo $title; ?></title>
 		<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
 		<script src="js/script.js" type="text/javascript"></script>
