@@ -1,6 +1,66 @@
+#contacts{
+	position:relative;
+}
+#contacts #direct{
+	position: absolute;
+	top: 50px;
+	width: 230px;
+	padding: 70px 20px 10px;
+	border: 1px solid silver;
+	background-color: white;
+	left:0px;
+}
+#contacts #direct #direct-title{
+	text-align: center;
+	padding: 10px 0px;
+	background-color: blue;
+	color: white;
+	text-shadow: none;
+	font-size: 1.2em;
+	position: absolute;
+	width: 290px;
+	left: -11px;
+	top: 15px;
+	margin: 0px;
+	border: 1px solid #F46A00;
+	-moz-box-shadow: inset 0px 0px 1px white;
+	-webkit-box-shadow: inset 0px 0px 1px white;
+	box-shadow: inset 0px 0px 1px white;
+	background: rgb(255,159,50);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(255,159,50,1) 0%, rgba(255,131,0,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,159,50,1)), color-stop(100%,rgba(255,131,0,1)));
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,159,50,1) 0%,rgba(255,131,0,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover,  rgba(255,159,50,1) 0%,rgba(255,131,0,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(255,159,50,1) 0%,rgba(255,131,0,1) 100%);
+	background: radial-gradient(center, ellipse cover,  rgba(255,159,50,1) 0%,rgba(255,131,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9f32', endColorstr='#ff8300',GradientType=1 );
+}
+#contacts #direct #direct-title:before{
+	border-color: transparent #DB5B00 #DB5B00 transparent;
+	border-style:solid;
+	border-width:5px;
+	width:0;
+	height:0;
+	content:"";
+	top:-11px;
+	left:-1px;
+	position:absolute;
+}
+#contacts #direct #direct-title:after{
+	border-color: transparent transparent #DB5B00 #DB5B00;
+	border-style:solid;
+	border-width:5px;
+	width:0;
+	height:0;
+	content:"";
+	top:-11px;
+	right:-1px;
+	position:absolute;
+}
 #comment{
 	padding:30px 0px 50px;
 	position:relative;
+	margin-left:200px;
 }
 #comment p{
 	text-align:center;
@@ -59,6 +119,9 @@
 #ajax{
 	position: absolute;
 	top: 190px;
-	left: 415px;
+	left: 320px;
 	display:none;
+}
+#thanks{
+	margin:50px 0px;
 }

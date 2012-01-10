@@ -8,7 +8,7 @@
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-28208851-1']);
 			_gaq.push(['_setDomainName', 'yomakino.com']);
-			_gaq.push(['_trackPageview']);
+			_gaq.push(['_trackPageview', document.location.href]);
 
 			(function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;

@@ -9,13 +9,12 @@
 	font-size:1em;
 }
 #about div #profile{
-	width:250px;
-	height:180px;
-	float:left;
-	margin:0px;
+	width: 240px;
+	float: left;
+	margin: 0px 50px 0px 0px;
 }
 #about div #profile img{
-	width:185px;
+	width:100%;
 	padding:5px;
 	border:1px solid silver;
 	background-color:white;
@@ -24,4 +23,6 @@
 	font-size:1.1em;
 	font-weight:bold;
 	margin-left:5px;
+	display:block;
+	text-align:center;
 }

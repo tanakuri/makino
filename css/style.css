@@ -230,6 +230,11 @@ a:hover{
 	background-size:60px 60px;
 	background-position:-33px -2px;
 }
+#cliff{
+	color: white;
+	text-shadow: none;
+	font-weight: normal;
+}
 
 /*other shtuff*/
 .amazon-button{

@@ -10,11 +10,7 @@
 					<a href="home"><h2>Home</h2></a>
 				</li>
 				<li class="<?php if( $tab == "about" ) echo 'selected'; ?>">
-					<h2>About</h2><br/>
-					<div>
-						<a href="about"><h2>About Me</h2></a><br/>
-						<a href="background"><h2>Background</h2></a>
-					</div>
+					<a href="about"><h2>About</h2></a>
 				</li>
 				<li class="<?php if( $tab == "books" ) echo 'selected'; ?>">
 					<a href="books"><h2>Books</h2></a>

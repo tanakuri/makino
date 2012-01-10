@@ -37,3 +37,20 @@ $(function(){
 		$('#works').css({'z-index':50});
 	});
 });
+(function($) {
+	var cache = [];
+	// Arguments are image paths relative to the current page.
+	$.preLoadImages = function() {
+		var args_len = arguments.length;
+		for (var i = args_len; i--;) {
+			var cacheImage = document.createElement('img');
+			cacheImage.src = arguments[i];
+			cache.push(cacheImage);
+		}
+	}
+})(jQuery);
+(function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();

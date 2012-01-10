@@ -8,7 +8,7 @@
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-28208851-1']);
 			_gaq.push(['_setDomainName', 'yomakino.com']);
-			_gaq.push(['_trackPageview']);
+			_gaq.push(['_trackPageview', document.location.href]);
 
 			(function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -25,19 +25,18 @@
 				<div class="mako">
 					<p>
 						<div id="pic1">
-							<img src="images/image-drucker.jpg" />
-							<span class="caption">クレアモントにあるドラッカースクール校舎。<br/>手前の通りは、ドラッカー生誕１００年を記念して命名されたドラッカーウエー</span>
+							<img src="images/image-cu.jpg" />
+							<span class="caption">ニューヨークにあるコロンビア大学ジャーナリズムスクールの正面玄関。銅像は第３第アメリカ大統領トマス・ジェファーソン</span>
 						</div>
 						<?php echo nl2br($about_me_text_1); ?>
 					</p>
 					<p>
 						<div id="pic2">
-							<img src="images/image-cu.jpg" />
-							<span class="caption">ニューヨークにあるコロンビア大学ジャーナリズムスクールの正面玄関。銅像は第３第アメリカ大統領トマス・ジェファーソン</span>
+							<img src="images/image-drucker.jpg" />
+							<span class="caption">クレアモントにあるドラッカースクール校舎。手前の通りは、ドラッカー生誕１００年を記念して命名されたドラッカーウエー</span>
 						</div>
 						<?php echo nl2br($about_me_text_2); ?>
 					</p>
-					<p>略歴については<a href="background.php">こちら</a>をご覧ください。</p>
 				</div>
 			</div>
 		<?php include('includes/bottom.html'); ?>
